@@ -1,0 +1,73 @@
+{
+  "repo": "packet-model-metric-grid",
+  "language": "Haskell",
+  "category": "ML utilities",
+  "goal": "Create a Haskell reference implementation for metric workflows, centered on constraint solving, bounded scenario files, and conflict explanations.",
+  "review_model": {
+    "terms": [
+      "feature drift",
+      "window width",
+      "metric stability",
+      "explainability"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "feature drift",
+      "signal": 74,
+      "slack": 41,
+      "drag": 11,
+      "confidence": 52,
+      "score": 208,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "window width",
+      "signal": 57,
+      "slack": 23,
+      "drag": 22,
+      "confidence": 84,
+      "score": 155,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "metric stability",
+      "signal": 68,
+      "slack": 48,
+      "drag": 30,
+      "confidence": 92,
+      "score": 186,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "explainability",
+      "signal": 82,
+      "slack": 43,
+      "drag": 26,
+      "confidence": 94,
+      "score": 223,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "feature drift",
+      "signal": 61,
+      "slack": 52,
+      "drag": 14,
+      "confidence": 82,
+      "score": 214,
+      "lane": "ship"
+    }
+  ]
+}
