@@ -1,0 +1,17 @@
+{
+  "repo": "packet-model-metric-grid",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 4,
+    "ship": 160,
+    "watch": 98
+  },
+  "terms": [
+    "feature drift",
+    "window width",
+    "metric stability",
+    "explainability"
+  ]
+}
